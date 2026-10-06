@@ -28,5 +28,17 @@ int main()
 	finalAmount = principalBalance * pow(1 + rateDecimal / timesCompounded, timesCompounded);
 	interestEarned = finalAmount - principalBalance;
 
+	// Displayed Results
+
+	cout << "\t\t\tReport:" << endl << endl;
+	
+	cout << "Initial Principal Balance: $" << principalBalance; cout << endl;
+	cout << "Interest Rate: " << ratePercent; cout << "%" << endl;
+	cout << "Times Compounded in 1 Year: " << timesCompounded; cout << endl; cout << endl;
+
+	cout << "Total Interest Earned: $" << interestEarned; cout << endl;
+	cout << "Final Balance: $" << finalAmount; 
+
+	return 0;
 
 }
