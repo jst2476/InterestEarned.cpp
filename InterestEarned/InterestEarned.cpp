@@ -22,5 +22,11 @@ int main()
 	cout << "How many times is interest compounded per year? "; cin >> timesCompounded; cout << endl;
 	cout << endl;
 
+	//Calculations:
+
+	rateDecimal = ratePercent / 100;
+	finalAmount = principalBalance * pow(1 + rateDecimal / timesCompounded, timesCompounded);
+	interestEarned = finalAmount - principalBalance;
+
 
 }
