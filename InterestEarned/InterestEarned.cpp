@@ -1,7 +1,7 @@
 // This program calculates the final balance in a savings account after one year using compound interest.
 #include <iostream>
-#include <iomanip>
-#include <cmath>
+#include <iomanip> //formating library
+#include <cmath> //additional operations
 using namespace std;
 int main()
 {
@@ -18,7 +18,7 @@ int main()
 	//User Inputs:
 
 	cout << "What is your initial balance? "; cin >> principalBalance; cout << endl;
-	cout << "What is your current annual interest rate? "; cin >> ratePercent; cout << endl;
+	cout << "What is your annual interest rate? "; cin >> ratePercent; cout << endl;
 	cout << "How many times is interest compounded per year? "; cin >> timesCompounded; cout << endl;
 	cout << endl;
 
@@ -30,20 +30,13 @@ int main()
 
 	// Displayed Results
 
-	cout << "\t\t\t Report:" << endl << endl;
-	
+	cout << "\t\t\t Report:" << endl << endl;	
 	cout << left << setw(30) << "Initial Principal Balance:" << right << "$" << principalBalance; cout << endl;
-
 	cout << left << setw(30) << "Interest Rate:" << right << ratePercent; cout << "%" << endl;
-
 	cout << left << setw(30) << "Times Compounded in 1 Year:" << right << timesCompounded; cout << endl; cout << endl;
 
-
-
 	cout << left << setw(30) << "Total Interest Earned:" << right << "$" << interestEarned; cout << endl;
-
 	cout << left << setw(30) << "Final Balance:" << right << "$" << finalAmount;
-
 
 	return 0;
 
