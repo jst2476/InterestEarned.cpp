@@ -5,8 +5,8 @@
 using namespace std;
 int main()
 {
-	cout << "0123456789012345678901234567890123456790123456789" << endl;
-	cout << "\t\t\tSaving Balance After 1 Year of Compounding Interest!" << endl << endl;
+	//cout << "0123456789012345678901234567890123456790123456789" << endl;
+	cout << "\t\t\t Saving Balance After 1 Year of Compounding Interest!" << endl << endl;
 
 	//Variables:
 
@@ -30,14 +30,20 @@ int main()
 
 	// Displayed Results
 
-	cout << "\t\t\tReport:" << endl << endl;
+	cout << "\t\t\t Report:" << endl << endl;
 	
-	cout << "Initial Principal Balance: $" << principalBalance; cout << endl;
-	cout << "Interest Rate: " << ratePercent; cout << "%" << endl;
-	cout << "Times Compounded in 1 Year: " << timesCompounded; cout << endl; cout << endl;
+	cout << left << setw(30) << "Initial Principal Balance:" << right << "$" << principalBalance; cout << endl;
 
-	cout << "Total Interest Earned: $" << interestEarned; cout << endl;
-	cout << "Final Balance: $" << finalAmount; 
+	cout << left << setw(30) << "Interest Rate:" << right << ratePercent; cout << "%" << endl;
+
+	cout << left << setw(30) << "Times Compounded in 1 Year:" << right << timesCompounded; cout << endl; cout << endl;
+
+
+
+	cout << left << setw(30) << "Total Interest Earned:" << right << "$" << interestEarned; cout << endl;
+
+	cout << left << setw(30) << "Final Balance:" << right << "$" << finalAmount;
+
 
 	return 0;
 
